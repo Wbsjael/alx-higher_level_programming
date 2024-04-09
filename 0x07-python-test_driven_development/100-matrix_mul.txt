@@ -1,0 +1,24 @@
+""" The matrix_mul module """
+
+""" importing print mul function """
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+""" test first case """
+>>> matrix_mul([[2, 3], [4, 5]], [[9, 8], [6, 7]])
+[[36, 37], [66, 67]]
+
+>>> matrix_mul([[10, 20]], [[30, 40], [50, 60]])
+[[1300, 1600]]
+
+>>> matrix_mul([[19, 28, 37]], [[36, 45, 53], [52, 61, 80], [90, 11, 12]])
+[[5470, 2970, 3691]]
+
+>>> matrix_mul([45, 69, [10, 20]], [[30, 40], [50, 60]])
+Traceback (most recent call last):
+ ...
+TypeError: m_a must be a list of lists or m_b must be a list of lists
+
+>>> matrix_mul([1, 2, 3, 4], [[1, 2], [3, 4]])
+Traceback (most recent call last):
+  ...
+TypeError: m_a must be a list of lists or m_b must be a list of lists
