@@ -1,0 +1,28 @@
+""" print new text lines """
+
+""" function for text indentation """
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+""" test for text indentation"""
+>>> text_indentation("hello: naz")
+hello:
+<BLANKLINE>
+naz 
+ 
+""" test longer string """
+>>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: Plus semper voluptatis?") 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+Quonam modo?
+<BLANKLINE>
+Utrum igitur tibi litteram videor an totas paginas commovere?
+<BLANKLINE>
+Non autem hoc:
+<BLANKLINE>
+igitur ne illud quidem.
+<BLANKLINE>
+Fortasse id optimum, sed ubi illud:
+<BLANKLINE>
+Plus semper voluptatis?
+<BLANKLINE>
+<BLANKLINE>

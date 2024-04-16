@@ -1,0 +1,23 @@
+""" print name module """
+""" importing print name function """
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+""" test first and last name output """
+>>> say_my_name("Nazarene",  "Wairimu")
+Hello there, I am Nazarene Wairimu
+
+""" test string value present """
+>>> say_my_name("Stephen", '28')
+Hello there, I am Stephen 28
+
+""" test int value lastname """
+>>> say_my_name("Muchiri", 96)
+Traceback (most recent call last):
+ ...
+TypeError: last_name must be a string
+
+""" test int value firstname """
+>>> say_my_name(78, "Gena")
+Traceback (most recent call last):
+ ...
+TypeError: first_name must be a string
