@@ -1,11 +1,23 @@
 #!/usr/bin/python3
-"""contains the MyList class"""
+"""
+Define a class Mylist
+"""
+
+
 class MyList(list):
+    """
+    Defining the class MyList
 
-    """list subclass"""
+    A custom list class that inherits from
+    the built-in List class
+
+    instance methods:
+        print_sorted: prints the list in ascending order
+    """
+
     def print_sorted(self):
-
+        """
+        prints the sorted list
+        """
         sorted_list = sorted(self)
-
-        """printing"""
         print(sorted_list)
